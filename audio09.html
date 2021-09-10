@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Dad Battle</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--Link the external css style to this html file-->
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<header>
+		<h1>TuneN</h1>
+		<a href="homepage.html">
+			<img src="media/images/tunen.png" alt="Home" height="60px" width="60px">
+		</a>
+		
+		<div class="topnav">
+			<input type="text" id="enterSearch" placeholder="Search...">
+			<a href="search.html">
+			<input type="button" id="clickMeBtn" value="Search" onclick="showMessage()">
+			<p id="searchMessage"></p>
+		</div>
+		
+		<div class="profile">
+			<a href="myprofile.html">
+				<img src="media/images/myavatar.jpg" alt="Profile Picture" height="60px" width="60px">
+			</a>
+			<div>Me!</div>
+		</div>
+	</header>
+
+	<main>
+
+		<!--Row-1-->
+		<section class="row1">
+			
+			<!--Col-2-->
+			<div class="col-2">
+				<img id="startOrStopImg" src="media/images/09_Dad_Battle.png" alt="Image" height="100%" width="100%"></img>
+					<audio id="audio" src="media/audio/09_Dad_Battle.mp3" type="audio/mp3">
+					Your browser does not support the audio element.
+					</audio>
+
+				<script>
+					document.getElementById("startOrStopImg").onclick = function() {
+						var audio = document.getElementById("audio");
+						if (audio.paused) audio.play();
+						else audio.pause();
+					};
+				</script>
+				
+			</div>
+			
+			<!--Col-3-->
+			<article class="col1-3">
+				<h2>Dad Battle</h2>
+				<h3>Posted by Kawai Sprite
+					<div>
+						<a href="kawaispriteprofile.html"> <!--target="_blank" causes the link to bring the user to a new tab-->
+							<img src="media/images/kawaispriteavatar.jpg" alt="Beep" height="120px" width="120px">
+						</a>
+					</div>
+				</h3>
+				Prove to Daddy Dearest, once and for all, that you're ready to date his daughter!<br>
+				<script>
+					document.getElementById("startOrStopImg").onclick = function() {
+						var audio = document.getElementById("audio");
+						if (audio.paused) audio.play();
+						else audio.pause();
+					};
+				</script>
+				
+			</article>
+			
+		</section>
+
+
+
+		
+		<!--Row-2-->
+		<section class="row2">
+		<h3>Recommended Tunes</h3>
+			<!--Col-1-->
+			<div class="col2-1">
+				<!--row-3-->
+				<div class="row2-1-1">			
+					
+					<div>
+					<a href="audio10.html">
+						<img src="media/images/10_Philly_Nice.png" alt="Image" height="200px" width="100%">
+					</a>
+					<div>Philly Nice</div>
+					</div>
+				
+				</div>
+
+				<!--row-1-->
+				<div class="row2-1-1">
+
+					<div>
+					<a href="audio01.html">
+						<img src="media/images/01_But_The_Earth_Refused_To_Die.png" alt="Image" height="200px" width="100%">
+					</a>
+					<div>But The Earth Refused To Die</div>
+					</div>
+					
+				</div>
+				
+				<!--row-2-->
+				<div class="row2-1-1">
+				
+					<div>
+						<a href="audio05.html">
+							<img src="media/images/05_Apotheosis.png" alt="Image" height="200px" width="100%">
+						</a>
+						<div>Apotheosis</div>
+					</div>
+				
+				</div>
+
+			</div>
+				
+		</section>
+
+	</main>
+
+<footer>
+	Made by Jay W.<br>
+	Contact me at: realemailaddress@gmail.co.nz
+</footer>
+
+
+	<!--Link the external javascript file to this html-->
+	<script src="javascript.js"></script>
+</body>
+
+</html>
