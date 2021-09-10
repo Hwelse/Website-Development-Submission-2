@@ -10,6 +10,12 @@ p {
 	color: purple;
 }
 
+.reference-style {
+	text-indent: -20px;
+	margin-left: 20px;
+}
+
+
 header {
 	min-height: 15vh;
 	background-color: lightpink;
